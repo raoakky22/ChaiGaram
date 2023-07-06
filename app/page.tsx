@@ -8,24 +8,23 @@ function page() {
     { fullValue: 300, currValue: 120, name: "pasta" },
   ];
   return (
-    <div style={{ height: "100vh", width: "100vw" }}>
+    <div style={{  width: "30vw", background : "white" ,borderRadius :"10px", paddingBottom : "10px" }}>
       <div
-        className="disp"
-        style={{ fontSize: "40px", color: "gray", fontWeight: "bold" }}
+        style={{display :"flex", alignItems :"center", fontSize: "25px", color: "black", fontWeight: "bold" , paddingLeft :"20px", marginBottom:"10px" }}
       >
         Monthly Popular Item
       </div>
       <div>
         {senddata.map((itm: any, ind: any) => {
           return (
-            <div className="disp">
+            <div className="disp" style={{
+              paddingRight : "20px"}}>
               <div
                 style={{
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  width: "90px",
-                  
+                  width: "90px"
                 }}
               >
                 <List ls={itm} />
